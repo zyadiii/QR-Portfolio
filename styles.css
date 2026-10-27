@@ -1,0 +1,146 @@
+body {
+    font-family: 'Trebuchet MS';
+    background-color: rgb(19, 0, 19);
+    color: rgb(253, 243, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-sect, .section {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff8fc;
+    border-radius: 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-text {
+    text-align: right;
+    color: #220025;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    color: #670070;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3d0042;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    color: #220025;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-card {
+    background-color: #220025;
+    border: 1px solid #670070;
+    border-radius: 30px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 15px -3px #ea6ff5b2;
+}
+
+.skill-name {
+    text-align: left;
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.contact-links {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 460px;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1.1rem;
+    border: 2px solid #670070;
+    border-radius: 12px;
+    color: #220025;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+    background-color: #670070;
+    color: #fff8fc;
+}
+
+.contact-link:focus-visible {
+    outline: 3px solid #ea6ff5;
+    outline-offset: 2px;
+}
+
+.contact-value {
+    font-weight: 400;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.website-footer {
+    background-color: white;
+    width: auto;
+    height: 2px auto;
+    padding: 10px;
+    color: #220025;
+}
